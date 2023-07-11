@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme, Box } from '@mui/material';
 import { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
-import Header from './components/Header';
+import HomePage from './components/HomePage';
 
 function App() {
   const [mode] = useState('light');
@@ -15,7 +15,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor="background.default" color="text.primary">
         <Router>
-          <Header />
+          <HomePage />
         </Router>
       </Box>
     </ThemeProvider>
