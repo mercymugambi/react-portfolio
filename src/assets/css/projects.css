@@ -61,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid #ccc;
   }
   
   .flip-box1-back {
@@ -104,6 +105,10 @@
   /* Media query for mobile screens */
   
   @media (max-width: 1457px) {
+    .projects-container1 {
+      height: 125vh;
+    }
+
     .projects-heading1 {
       font-size: 24px;
       margin-bottom: 10px 20px;
@@ -127,7 +132,23 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1180px) {
+    .projects-container1 {
+      height: 125vh;
+    }
+  }
+
+  @media (max-width: 1117px) {
+    .projects-container1 {
+      height: 245vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-container1 {
+      height: 185vh;
+    }
+    
     .projects-list {
       grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
       margin: auto;
