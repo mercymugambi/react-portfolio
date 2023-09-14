@@ -4,6 +4,7 @@ import {
 } from '@mui/material';
 import MaterialUISwitch from './Switch';
 import DrawerComp from './DrawerComp';
+import LandingPage from './LandingPage';
 
 const Header = () => {
   const [value, setValue] = useState(0);
@@ -12,9 +13,9 @@ const Header = () => {
 
   return (
     <>
-      <AppBar>
+      <AppBar sx={{ backgroundColor: '#fff' }}>
         <Toolbar>
-          <Typography>
+          <Typography sx={{ color: '#9C27B0', fontSize: '30px' }}>
             Mercy
           </Typography>
           { isMatch ? (
@@ -24,13 +25,13 @@ const Header = () => {
           ) : (
             <>
               <Tabs
-                textColor="inherit"
                 sx={{ marginLeft: 'auto' }}
                 value={value}
                 onChange={(e, newValue) => setValue(newValue)}
                 indicatorColor="secondary"
               >
-                <Tab label="Projects" />
+                <Tab label="Home" />
+                <Tab label="Portfolio" />
                 <Tab label="About" />
                 <Tab label="Contact Me" />
               </Tabs>
@@ -39,6 +40,7 @@ const Header = () => {
           <MaterialUISwitch />
         </Toolbar>
       </AppBar>
+      <LandingPage />
     </>
   );
 };
