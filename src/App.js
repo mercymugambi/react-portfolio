@@ -1,5 +1,6 @@
 import { ThemeProvider, createTheme, Box } from '@mui/material';
 import { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
 import Header from './components/Header';
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor="background.default" color="text.primary">
-        <Header />
+        <Router>
+          <Header />
+        </Router>
       </Box>
     </ThemeProvider>
   );
