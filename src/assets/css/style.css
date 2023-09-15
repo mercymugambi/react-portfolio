@@ -9,6 +9,7 @@
     --dark : #161616;
     --left-padding : 3rem;
     --values : 20px;
+    --blue: #1976d2
 }
 
 *{
@@ -24,15 +25,22 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero .container .particels{
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero .center img{
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.hero .center img:hover {
+    transform: rotate(360deg);
 }
 
 .flex{
     display: flex;
     align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-center{
@@ -82,9 +90,9 @@ p{
 }
 
 .hero .center img{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    width: 350px;
+        height: 500px;
+        border-radius: 20rem;
     border: 2px solid var(--light-gray);
     z-index: 1;
 }
@@ -146,10 +154,15 @@ p{
 }
 
 .hero .right .info h3{
-    margin-bottom: 2rem;
+    margin-bottom: 10px;
     border-top: 1px solid var(--light-gray);
     padding-top: .5rem;
     width: fit-content;
+}
+
+.hero .right .info h2 {
+    margin-top: 0;
+    color: var(--blue);
 }
 
 .hero .center , .hero .info{
@@ -184,8 +197,41 @@ p{
 }
 
 /* ************** Resposive ********** */
+@media screen and (max-width : 1440px) {
+    :root{
+        --center-line-width : 640px;
+        --left-padding : 2rem;
+    }
 
-@media screen and (max-width : 1115px) {
+    .hero .center img{
+        width: 350px;
+        height: 500px;
+        border-radius: 20rem;
+    }
+
+    .hero .center::before{
+        transform: rotate(-51deg);
+    }
+}
+
+@media screen and (max-width : 1240px) {
+    :root{
+        --center-line-width : 616px;
+        --left-padding : 2rem;
+    }
+
+    .hero .center img{
+        width: 350px;
+        height: 500px;
+        border-radius: 20rem;
+    }
+
+    .hero .center::before{
+        transform: rotate(-52deg);
+    }
+}
+
+@media screen and (max-width : 1135px) {
     :root{
         --center-line-width : 605px;
         --left-padding : 2rem;
@@ -244,9 +290,9 @@ p{
 
 @media screen and (max-width : 750px) {
     .hero .center img{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
+        width: 350px;
+        height: 500px;
+        border-radius: 20rem;
     }
 
     .hero .left .info{
@@ -285,8 +331,15 @@ p{
 
 @media screen and (max-width : 507px) {
     .hero .center img{
-        border-radius: 1rem;
+        width: 290px;
+        height: 350px;
+        border-radius: 20rem;
+        transition: width 2s, height 2s, transform 2s;
     }
+
+    .hero .center img:hover {
+        transform: rotate(360deg);
+}
 
     .hero .right{
         width: 100%;
@@ -297,7 +350,7 @@ p{
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .hero .right .info .values{
