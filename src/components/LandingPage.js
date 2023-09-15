@@ -2,28 +2,25 @@ import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { TypeAnimation } from 'react-type-animation';
 import profileImage from '../assets/images/mercy.jpg';
+import documentCV from '../assets/documents/mercymugambiCV.pdf';
 
 const LandingPage = () => (
   <div className="hero container">
     <div className="left flex-center">
       <div className="info flex-center">
+        {/* <h1 className="name" style={{ color: '#ccc' }}>Mercy Mugambi</h1> */}
         <h3 className="role">Full Stack Developer</h3>
         <TypeAnimation
           sequence={[
-            'Hello!\nWelcome to my website.\nMy name is Mercy Mugambi!\nInnovative Full Stack Developer\nwith a passion for creating\nseamless web applications.',
+            'Hello!\nWelcome to my website.\nMy name is Mercy Mugambi! Innovative Full Stack Developer with a passion for creating seamless web applications.',
             1000,
             '',
           ]}
           speed={50}
-          style={{ whiteSpace: 'pre-line', fontSize: '20px', color: '#1976d2' }}
+          style={{ whiteSpace: 'pre-line', fontSize: '18px', color: '#1976d2' }}
           repeat={Infinity}
         />
-        <p>
-          Skilled in front-end and
-          back-end technologies, ready to take on new challenges.
-        </p>
-
-        <button type="button" className="lwt">Lets work together</button>
+        <a href={documentCV} className="lwt" download="mercymugambiCV.pdf">Download CV</a>
       </div>
     </div>
 
@@ -34,27 +31,21 @@ const LandingPage = () => (
 
     <div className="right flex-center">
       <div className="info flex-center">
+        <h2>Backend Stack</h2>
         <div className="values">
-          <h1 id="experience">
-            {' '}
-            +
-          </h1>
-          <h3>years of experience</h3>
+          Ruby, Rails, PostgreSql
         </div>
-        <div className="values">
-          {/* <h1 id="clients" /> */}
-          <h3>happy clients</h3>
+        <h2>Frontend Stack</h2>
+        <div className="">
+          React, Javascript, Vue.js, Html5, CSS
         </div>
-        <div className="values">
-          <h1 id="projects">
-            {' '}
-            +
-          </h1>
-          <h3>projects completed</h3>
+        <h2>Version Control</h2>
+        <div className="">
+          Git, Github, Gitlab, BitBucket
         </div>
-        <div className="values">
-          {/* <h1 id="screens" /> */}
-          <h3>screens</h3>
+        <h2>UI Libraries</h2>
+        <div className="">
+          Bootstrap, MaterialUI, TailWind, NextUI
         </div>
       </div>
     </div>
