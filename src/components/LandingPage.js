@@ -3,7 +3,6 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import profileImage from '../assets/images/mercy.jpg';
 import documentCV from '../assets/documents/mercymugambiCV.pdf';
-import Projects from './Projects';
 
 const LandingPage = () => (
   <>
@@ -52,7 +51,6 @@ const LandingPage = () => (
         </div>
       </div>
     </div>
-    <Projects />
   </>
 );
 
