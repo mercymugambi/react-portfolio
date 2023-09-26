@@ -4,7 +4,6 @@ import {
 } from '@mui/material';
 import MaterialUISwitch from './Switch';
 import DrawerComp from './DrawerComp';
-import LandingPage from './LandingPage';
 
 const Header = () => {
   const [value, setValue] = useState(0);
@@ -40,7 +39,6 @@ const Header = () => {
           <MaterialUISwitch />
         </Toolbar>
       </AppBar>
-      <LandingPage />
     </>
   );
 };

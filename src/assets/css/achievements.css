@@ -1,0 +1,28 @@
+/* Achievement.css */
+.achievement-container {
+  text-align: center;
+  margin: 50px;
+  display: flex;
+  position: relative;
+}
+
+.achievement-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.achievement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-image {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.achievement-description {
+  font-size: 16px;
+  margin-top: 20px;
+}
