@@ -21,7 +21,7 @@ const LandingPage = () => (
             style={{ whiteSpace: 'pre-line', fontSize: '18px', color: '#1976d2' }}
             repeat={Infinity}
           />
-          <a href={documentCV} className="lwt" download="mercymugambiCV.pdf">Download CV</a>
+          <a href={documentCV} className="lwt cv" download="mercymugambiCV.pdf">Download CV</a>
         </div>
       </div>
 

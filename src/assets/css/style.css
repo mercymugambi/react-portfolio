@@ -25,6 +25,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.index-module_type__E-SaG {
+  min-height: 160px;
+}
+
 .hero .center img {
   width: 350px;
   height: 500px;
@@ -81,16 +85,11 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 650px) {
-  .container {
-    padding: 0 1rem;
-  }
-}
-
 .hero {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 100px;
+  padding-top: 50px;
+  height: 100vh;
 }
 
 .hero .info {
@@ -114,6 +113,8 @@ p {
   padding-left: var(--left-padding);
 }
 
+info flex-center
+
 .hero .left .name {
   font-size: var(--name);
   color: var(--light);
@@ -131,6 +132,11 @@ p {
   margin-bottom: 3rem;
 }
 
+.cv {
+  /* position: relative; */
+  top: 0;
+}
+
 .hero .left .lwt {
   background-color: var(--dark);
   color: var(--light);
@@ -141,6 +147,18 @@ p {
   cursor: pointer;
   border-radius: 3rem;
   transition: all 0.3s ease-in-out;
+}
+
+.left .flex-center {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.info .flex-center{
+  flex-basis: 100px;
+  position: relative;
 }
 
 .hero .left .lwt:hover {
@@ -359,7 +377,7 @@ p {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 170px;
   }
 
   .hero .center {
@@ -387,7 +405,7 @@ p {
 
   .hero .right {
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
   }
 
   .hero .right .info {
